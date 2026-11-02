@@ -2,7 +2,7 @@ import streamlit as st
 from src.components.header import global_header
 
 def home_screen():
-    global_header(show_auth=False, portal_type="AI Portal", show_home=False)
+    global_header(show_auth=False, portal_type="Attendance Portal", show_home=False)
 
     st.markdown(
         '''
@@ -22,7 +22,7 @@ def home_screen():
     with col1:
         with st.container(border=True):
             st.markdown("### 🎓 Student Portal")
-            st.write("Mark attendance via AI face scan and track your academic records instantly.")
+            st.write("Mark attendance via facial recognition scan and track your academic records instantly.")
             if st.button("Enter Student Portal →", key="student_btn", use_container_width=True, type="primary"):
                 st.session_state["login_type"] = "student"
                 st.rerun()

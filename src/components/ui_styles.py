@@ -73,7 +73,7 @@ def inject_global_css():
             font-weight: 600 !important;
         }
         
-        /* Take AI Attendance Section */
+        /* Take Attendance Section */
         .attendance-heading {
             background: linear-gradient(90deg, #4F6EF7, #7C3AED) !important;
             -webkit-background-clip: text !important;

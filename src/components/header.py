@@ -2,7 +2,7 @@ import streamlit as st
 import base64
 from pathlib import Path
 
-def global_header(show_auth=False, user_name=None, portal_type="AI Portal", show_home=True):
+def global_header(show_auth=False, user_name=None, portal_type="Attendance Portal", show_home=True):
     logo_path = Path(r"C:/Users/uhari/Downloads/ChatGPT Image May 9, 2026, 11_33_26 AM.png")
     img_src = ""
     if logo_path.exists():
@@ -13,10 +13,10 @@ def global_header(show_auth=False, user_name=None, portal_type="AI Portal", show
 
     # ── CSS (no HTML here) ────────────────────────────────────────────────────
     st.markdown(f"""<style>
-        .presence-nav{{position:fixed;top:0;left:0;width:100vw;height:72px;background:#fff;
+        .smartattend-nav{{position:fixed;top:0;left:0;width:100vw;height:72px;background:#fff;
             border-bottom:1px solid #E2E8F0;box-shadow:0 1px 8px rgba(0,0,0,.06);
             z-index:99999;display:flex;align-items:center;justify-content:center;}}
-        .presence-nav-inner{{width:100%;max-width:1200px;padding:0 24px;display:flex;
+        .smartattend-nav-inner{{width:100%;max-width:1200px;padding:0 24px;display:flex;
             align-items:center;justify-content:space-between;}}
         .nav-brand-name{{font-size:22px;font-weight:900;color:#0f172a;line-height:1.1;letter-spacing:-.5px;}}
         .nav-brand-name span{{background:linear-gradient(90deg,#4F6EF7,#7C3AED);
@@ -28,10 +28,10 @@ def global_header(show_auth=False, user_name=None, portal_type="AI Portal", show
     </style>""", unsafe_allow_html=True)
 
     # ── HTML (tiny — no base64 here) ─────────────────────────────────────────
-    st.markdown(f"""<div class="presence-nav"><div class="presence-nav-inner">
+    st.markdown(f"""<div class="smartattend-nav"><div class="smartattend-nav-inner">
         <div style="display:flex;align-items:center;gap:16px;">
             <div class="nav-logo-el"></div>
-            <div><div class="nav-brand-name">presence<span>Ai</span></div>
+            <div><div class="nav-brand-name">Smart<span>Attend</span></div>
             <div class="nav-badge">{portal_type}</div></div>
         </div>
         <div style="display:flex;align-items:center;gap:12px;">{greeting_html}</div>

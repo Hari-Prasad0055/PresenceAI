@@ -13,7 +13,7 @@ def main():
     logo = Image.open("assets/logo.png")
 
     st.set_page_config(
-        page_title='PresenceAI - Making Attendence faster using AI',
+        page_title='SmartAttend - Making Attendance Faster with Automated Recognition',
         page_icon=logo
     )
     

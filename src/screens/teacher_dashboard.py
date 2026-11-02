@@ -60,7 +60,7 @@ def teacher_dashboard():
 
 def teacher_tab_take_attendance():
     teacher_id = st.session_state.teacher_data['teacher_id']
-    st.markdown('<h2 class="attendance-heading">Take AI Attendance</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 class="attendance-heading">Take Attendance</h2>', unsafe_allow_html=True)
 
     if 'attendence_images' not in st.session_state:
         st.session_state.attendence_images = []
